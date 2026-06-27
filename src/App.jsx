@@ -1,3 +1,5 @@
+import Envelope from "./components/Envelope";
+
 export default function App() {
   return (
     <div
@@ -5,21 +7,33 @@ export default function App() {
         width: "100%",
         height: "100vh",
         background:
-          "linear-gradient(135deg,#3b0000,#8b0000,#c1121f)",
+          "linear-gradient(135deg,#430000,#8b0000,#b71c1c)",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
-        color: "#fff",
-        fontFamily: "Arial"
+        color: "white"
       }}
     >
-      <h1 style={{fontSize:"55px",margin:0}}>
-        🎉 Happy Birthday 🎉
+      <h1
+        style={{
+          fontFamily: "cursive",
+          fontSize: "52px"
+        }}
+      >
+        Press the Envelope
       </h1>
 
-      <p style={{fontSize:"22px"}}>
-        A Special Letter is Waiting For You ❤️
+      <Envelope />
+
+      <p
+        style={{
+          marginTop: "25px",
+          fontSize: "22px",
+          fontStyle: "italic"
+        }}
+      >
+        Tap to continue
       </p>
     </div>
   );
