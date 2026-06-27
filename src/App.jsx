@@ -4,21 +4,21 @@ export default function App() {
   return (
     <div
       style={{
-        width: "100%",
         height: "100vh",
         background:
-          "linear-gradient(135deg,#430000,#8b0000,#b71c1c)",
+          "linear-gradient(135deg,#4a0000,#830000,#c1121f)",
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        flexDirection: "column",
         color: "white"
       }}
     >
       <h1
         style={{
           fontFamily: "cursive",
-          fontSize: "52px"
+          fontSize: "58px",
+          marginBottom: "25px"
         }}
       >
         Press the Envelope
@@ -28,12 +28,12 @@ export default function App() {
 
       <p
         style={{
-          marginTop: "25px",
+          marginTop: "40px",
           fontSize: "22px",
           fontStyle: "italic"
         }}
       >
-        Tap to continue
+        Tap the envelope ❤️
       </p>
     </div>
   );
